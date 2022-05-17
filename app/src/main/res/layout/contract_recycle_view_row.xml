@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:stretchColumns="1,2,3,4,5">
+
+    <TableRow android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/fullname"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:fontFamily="@font/roboto_black"
+            android:gravity="center"
+            android:text="@string/full_name"
+            android:textColor="@color/secondary"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/Signing_date"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:fontFamily="@font/roboto_black"
+            android:gravity="center"
+            android:text="@string/signing_date"
+            android:textColor="@color/secondary"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/Position"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:fontFamily="@font/roboto_black"
+            android:gravity="center"
+            android:text="@string/position"
+            android:textColor="@color/secondary"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            android:fontFamily="@font/roboto_black"
+            android:gravity="center"
+            android:text="@string/status"
+            android:textColor="@color/secondary"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/ViewFile"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_column="5"
+            android:fontFamily="@font/roboto_black"
+            android:gravity="center"
+            android:text="View File"
+            android:textColor="@color/actionbar"
+            android:textSize="12sp" />
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="5dp"
+        android:background="@color/secondary" />
+</TableLayout>

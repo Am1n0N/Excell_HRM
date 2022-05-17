@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1555" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/background_addemployee.xml" value="0.3625" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/background_edittext.xml" value="0.158" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/background_loginbtn.xml" value="0.158" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/background_menu.xml" value="0.255" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/background_profile.xml" value="0.2995" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/background_profile_imagebutton.xml" value="0.255" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/background_record_edittext.xml" value="0.3155" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/ic_book.xml" value="0.1265" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/ic_chart_line.xml" value="0.1265" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/ic_checkmark.xml" value="0.1265" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/ic_clock.xml" value="0.186" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/ic_email.xml" value="0.1185" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/ic_home.xml" value="0.363" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/ic_hourglass_end.xml" value="0.255" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1555" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/ic_loading.xml" value="0.255" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/ic_password.xml" value="0.1265" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/ic_phone.xml" value="0.1185" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/ic_pto.xml" value="0.1265" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/ic_signout.xml" value="0.164" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/ic_task.xml" value="0.1265" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/ic_user.xml" value="0.186" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/ic_user_tie.xml" value="0.186" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/tab_color.xml" value="0.363" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/drawable/topbar_background.xml" value="0.257" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/attendance_employee_recycle_view.xml" value="0.29713552800342025" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/attendance_management_activity.xml" value="0.29713552800342025" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/contract_recycle_view_row.xml" value="0.25" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/employee_recycle_view_row.xml" value="0.6047854785478548" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/entry_activity.xml" value="0.29713552800342025" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/entry_recycle_view.xml" value="0.2484134179510426" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/fragment_add_employee.xml" value="0.5" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/fragment_add_entry.xml" value="0.29713552800342025" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/fragment_contract.xml" value="0.32887700534759357" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/fragment_employees.xml" value="0.29713552800342025" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/fragment_entries_dashboard.xml" value="0.2484134179510426" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/fragment_scrolling.xml" value="0.29713552800342025" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/fragment_setattendance.xml" value="0.25" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/fragmentattendance_dashboard.xml" value="0.29713552800342025" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/history_recycle_view.xml" value="0.29713552800342025" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/login_activity.xml" value="0.25" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/main_recycle_view_row.xml" value="0.5392670157068062" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/newemail_popup.xml" value="0.29713552800342025" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/newpassword_popup.xml" value="0.29713552800342025" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/newphonenumber_popup.xml" value="0.29713552800342025" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/newusername_popup.xml" value="0.29713552800342025" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/profile_activity.xml" value="0.33" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/record_management_activity.xml" value="0.29713552800342025" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/showpdf.xml" value="0.2501068832834545" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/staff_management_activity.xml" value="0.25" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.112" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
