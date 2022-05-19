@@ -154,8 +154,6 @@ public class Entries_DashboardFragment extends Fragment implements OnClickListen
                         entryHistory = gson.fromJson(json, EntryHistory.class);
                         //Creating Arraylist of Object task
                         listHistory.add(entryHistory);
-                        System.out.println("json:");
-                        System.out.println(json);
                     }
                     //Displaying Data
                     getActivity().runOnUiThread(new Runnable() {

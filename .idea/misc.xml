@@ -32,9 +32,10 @@
         <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/attendance_employee_recycle_view.xml" value="0.29713552800342025" />
         <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/attendance_management_activity.xml" value="0.29713552800342025" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/comments_recycle_view_row.xml" value="0.29713552800342025" />
         <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/contract_recycle_view_row.xml" value="0.25" />
         <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/employee_recycle_view_row.xml" value="0.6047854785478548" />
-        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/entry_activity.xml" value="0.29713552800342025" />
+        <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/entry_activity.xml" value="0.316956261234272" />
         <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/entry_recycle_view.xml" value="0.2484134179510426" />
         <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/fragment_add_employee.xml" value="0.5" />
         <entry key="..\:/workspace/MyApplication/app/src/main/res/layout/fragment_add_entry.xml" value="0.29713552800342025" />

@@ -22,7 +22,7 @@ public class AttendanceManagement extends AppCompatActivity implements TabLayout
         setContentView(R.layout.attendance_management_activity);
 
         toolbar=(Toolbar)findViewById(R.id.toolbar_attendance);
-        toolbar.setTitle("Records Management");
+        toolbar.setTitle("Attendance Management");
         setSupportActionBar(toolbar);
 
         tabLayout=findViewById(R.id.tablayout_attendance);

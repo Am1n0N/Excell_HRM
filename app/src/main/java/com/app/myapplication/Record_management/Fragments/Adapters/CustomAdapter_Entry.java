@@ -13,7 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.app.myapplication.R;
-import com.app.myapplication.Record_management.Entry;
+import com.app.myapplication.Record_management.Entry_view;
 import com.app.myapplication.models.EntryHistory;
 
 import java.util.ArrayList;
@@ -42,8 +42,8 @@ public class CustomAdapter_Entry extends RecyclerView.Adapter<CustomAdapter_Entr
         holder.view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, Entry.class);
-                intent.putExtra("id",History.get(position).getId());
+                Intent intent = new Intent(context, Entry_view.class);
+                intent.putExtra("id",History.get(position).getId().toString());
                 context.startActivity(intent);
             }
         });

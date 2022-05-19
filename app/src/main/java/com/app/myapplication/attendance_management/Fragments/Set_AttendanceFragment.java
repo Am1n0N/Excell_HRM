@@ -185,7 +185,8 @@ public class Set_AttendanceFragment extends Fragment implements OnClickListener{
                 public void onResponse(Call call, Response response) throws IOException {
                     //Converting jsonData string into JSON object
                     try {
-                        jsnobject = new JSONObject(response.body().string());
+                        myResponse=response.body().string();
+                        jsnobject = new JSONObject(myResponse);
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
@@ -196,7 +197,7 @@ public class Set_AttendanceFragment extends Fragment implements OnClickListener{
                         e.printStackTrace();
                     }
                     Gson gson = new Gson();
-                    //Converting jsonObject string into task object
+                    //Converting jsonObject string into Employee object
                     for (int i = 0; i < jsonArray_employee.length(); i++) {
                         try {
                             json = jsonArray_employee.get(i).toString();
@@ -241,7 +242,7 @@ public class Set_AttendanceFragment extends Fragment implements OnClickListener{
 
         name.setText(SelectedEmployee.getName());
         lastname.setText(SelectedEmployee.getLastName());
-        signin.setText(SelectedEmployee.getIsActive().toString());
+        signin.setText(SelectedEmployee.getIsSigned().toString());
         position.setText(SelectedEmployee.getPosition());
         //Getting Profile pic
         String ImageUrl_String="http://10.0.2.2:5000/static/pics/"+SelectedEmployee.getId()+".jpg";

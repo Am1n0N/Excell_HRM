@@ -32,6 +32,9 @@ public class Employee {
     @SerializedName("isActive")
     @Expose
     private Boolean isActive;
+    @SerializedName("isSigned")
+    @Expose
+    private Boolean isSigned;
     @SerializedName("last_name")
     @Expose
     private String lastName;
@@ -131,7 +134,9 @@ public class Employee {
     public String getName() {
         return name;
     }
-
+    public Boolean getIsSigned() {
+        return isSigned;
+    }
     public void setName(String name) {
         this.name = name;
     }
@@ -174,5 +179,7 @@ public class Employee {
     public void setPosition(String position) {
         this.position = position;
     }
-
+    public void setIsSigned(Boolean isSigned) {
+        this.isSigned = isSigned;
+    }
 }
