@@ -26,17 +26,19 @@
                 android:layout_height="100dp"
                 android:gravity="center"
                 android:orientation="vertical">
+
                 <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/profile_pic"
                     android:layout_width="70dp"
                     android:layout_height="66dp"
+                    android:layout_margin="0dp"
                     android:clickable="true"
+                    android:contentDescription="@string/profile_pic"
                     android:foreground="?android:attr/selectableItemBackground"
                     android:onClick="Profile"
-                    app:shapeAppearanceOverlay="@style/Circular"
-                    android:id="@+id/profile_pic"
+                    android:scaleType="fitXY"
                     android:src="@drawable/profile_3"
-                    android:layout_margin="0dp"
-                    android:contentDescription="@string/profile_pic"/>
+                    app:shapeAppearanceOverlay="@style/Circular" />
 
             </LinearLayout>
 

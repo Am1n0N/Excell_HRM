@@ -1,8 +1,10 @@
 package com.app.myapplication.Record_management;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -55,6 +57,11 @@ public class Entry_view extends AppCompatActivity {
     //EDITTEXTs & Buttons
     private String EntryId;
     private EditText CommentInput;
+    private Button modify_button,delete_button;
+
+    private AlertDialog.Builder dialogBuilder;
+    private AlertDialog dialog;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -159,6 +166,8 @@ public class Entry_view extends AppCompatActivity {
         TextView entryPublic = findViewById(R.id.Entry_public);
         EditText Comment_input = findViewById(R.id.Comment_input);
         ImageView user_image = findViewById(R.id.CurrentUser_img);
+        modify_button = findViewById(R.id.modify_entry);
+        delete_button = findViewById(R.id.delete_entry);
         //Displaying data
         entryTitle.setText(entry.getTitle());
         entryDescription.setText(entry.getDescription());
@@ -187,7 +196,18 @@ public class Entry_view extends AppCompatActivity {
         String imageUrl_String = "http://10.0.2.2:5000/static/pics/" + entry.getCurrentUserId() + ".jpg";
         new DownloadImageProfile(user_image).execute(imageUrl_String);
 
-
+        modify_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ChangeEntryDialog(entry.getId().toString());
+            }
+        });
+        delete_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                delete_entry(entry.getId().toString());
+            }
+        });
     }
 
     private void DisplayDataFromCommentArray(ArrayList<Comment> list){
@@ -230,4 +250,101 @@ public class Entry_view extends AppCompatActivity {
             }
         });
     }
+
+    private void delete_entry(String id){
+        RequestBody formBody = new FormBody.Builder()
+                .add("id", id)
+                .build();
+
+        Request request = new Request.Builder()
+                .url(BASE_URL + "/delete_entry")
+                .post(formBody)
+                .build();
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(@NonNull Call call, @NonNull IOException e) {
+                e.getStackTrace();
+            }
+
+            @Override
+            public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
+                if(response.isSuccessful()){
+                    myResponse= response.body().string();
+                    if (response.equals("Entry deleted successfully.")){
+                        Entry_view.this.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(Entry_view.this,"Entry deleted successfully.",Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    }
+                }
+            }
+        });
+    }
+
+    private void modify_entry(String id,String title, String Description){
+        RequestBody formBody = new FormBody.Builder()
+                .add("id", id)
+                .add("title", title)
+                .add("description", Description)
+                .build();
+
+        Request request = new Request.Builder()
+                .url(BASE_URL + "/change_entry")
+                .post(formBody)
+                .build();
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(@NonNull Call call, @NonNull IOException e) {
+                e.getStackTrace();
+            }
+
+            @Override
+            public void onResponse(@NonNull Call call, @NonNull Response response) throws IOException {
+                if(response.isSuccessful()){
+                    myResponse= response.body().string();
+                    if (response.equals("Entry changed successfully.")){
+                        Entry_view.this.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                Toast.makeText(Entry_view.this,"Entry changed successfully.",Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                    }
+                }
+            }
+        });
+    }
+
+     private void ChangeEntryDialog(String id){
+         dialogBuilder = new AlertDialog.Builder(this);
+         final View passwordPopupView = getLayoutInflater().inflate(R.layout.change_entry_popup,null);
+
+         //Getting Edittexts
+         EditText title_input = (EditText) passwordPopupView.findViewById(R.id.New_Title_input);
+         EditText Description_input = (EditText) passwordPopupView.findViewById(R.id.New_Description_input);
+
+         //Getting buttons
+         TextView ok_button = (TextView) passwordPopupView.findViewById(R.id.Post_Changed_entry);
+         TextView cancel_button = (TextView) passwordPopupView.findViewById(R.id.cancel_popup);
+
+         dialogBuilder.setView(passwordPopupView);
+         dialog = dialogBuilder.create();
+         dialog.show();
+
+        ok_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                modify_entry(id,title_input.getText().toString(),Description_input.getText().toString());
+            }
+        });
+
+        cancel_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+     }
 }
