@@ -22,6 +22,11 @@
             android:label="@string/title_activity_staff_management"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
+            android:name=".Pto_management.PtoManagement"
+            android:exported="false"
+            android:label="PTO management"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
             android:name=".Record_management.Entry_view"
             android:exported="false"
             android:label="Entry"

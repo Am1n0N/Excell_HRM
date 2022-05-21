@@ -14,6 +14,7 @@ import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.app.myapplication.Pto_management.PtoManagement;
 import com.app.myapplication.Record_management.RecordManagement;
 import com.app.myapplication.attendance_management.AttendanceManagement;
 import com.app.myapplication.mainActivity.CustomAdapter_Main;
@@ -67,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         CardView manage_staff = findViewById(R.id.manage_staff);
         CardView manage_attendance = findViewById(R.id.manage_attendance);
         CardView manage_record = findViewById(R.id.manage_record);
+        CardView manage_PTOs = findViewById(R.id.manage_PTOs);
 
         //buttons actionlistener
         manage_staff.setOnClickListener(new View.OnClickListener() {
@@ -88,6 +90,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, RecordManagement.class);
+                startActivity(intent);
+            }
+        });
+        manage_PTOs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, PtoManagement.class);
                 startActivity(intent);
             }
         });
