@@ -13,9 +13,9 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.app.myapplication.MainActivity;
 import com.app.myapplication.MycookieJar;
 import com.app.myapplication.R;
+import com.app.myapplication.Record_management.Request_view;
 import com.app.myapplication.models.RequestObj;
 
 import java.io.IOException;
@@ -61,7 +61,7 @@ public class CustomAdapter_Request extends RecyclerView.Adapter<CustomAdapter_Re
             @Override
             public void onClick(View view) {
                 //TODO:Create request view and put here
-                Intent intent = new Intent(context, MainActivity.class);
+                Intent intent = new Intent(context, Request_view.class);
                 intent.putExtra("id", History.get(position).getId().toString());
                 context.startActivity(intent);
             }

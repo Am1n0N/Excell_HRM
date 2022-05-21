@@ -27,6 +27,11 @@
             android:label="Entry"
             android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity
+            android:name=".Record_management.Request_view"
+            android:exported="false"
+            android:label="Request"
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
+        <activity
             android:name=".attendance_management.AttendanceManagement"
             android:exported="false"
             android:label="Attendance Management"
